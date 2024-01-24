@@ -1,1 +1,3 @@
-Hello world! My name is Mike, and I am determined to become a web developer. I've dedicated countless years to starting from scratch, but I believe this time I will succeed. Wish me luck!
+Hello world! My name is Mike, and I am determined to become a web developer. 
+I've dedicated countless years to starting from scratch, but I believe this time I will succeed. 
+Wish me luck!

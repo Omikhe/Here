@@ -1,2 +1,3 @@
-# This is a readme file
-## Oh yes, it is!
+# Here
+My first repo as an Odin student
+Hello Odin
