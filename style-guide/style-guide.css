@@ -1,0 +1,38 @@
+/* 
+Fonts and colors style guide. 
+Author: @omikhe [https://github.com/omikhe]
+*/
+
+/* Font Family */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.hero,
+.footer {
+  background-color: #1f2937;
+}
+
+.h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+}
+
+.h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+.p,
+.nav-links {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.button {
+  background-color: #3882f6;
+  font-size: 18px;
+  font-weight: bold;
+}
