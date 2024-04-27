@@ -1,7 +1,9 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
-    // your code here
+    int number = 10;
+    cout << "number lives at: " << &number << endl;
     return 0;
 }
