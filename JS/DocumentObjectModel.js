@@ -10,3 +10,33 @@ structure, and style of a web page.
 
 - Bro Code [https://www.youtube.com/watch?v=NO5kUNxGIu0]
 */
+
+/*
+JavaScript Object
+
+In JavaScript, objects are one of the fundamental data types used to store collections of data and related functionality. An object is an unordered collection of key-value pairs, where the keys are strings (or symbols), and the values can be of any data type, including other objects, arrays, or functions.
+
+*/
+// object syntax
+const myObject = {
+  key1: "value1",
+  key2: 42,
+  key3: true,
+  key4: function () {
+    console.log("I am a method!");
+  },
+};
+
+/*
+accessing data in objects
+
+You can access the properties of an object using dot notation or bracket notation
+
+- myObject.key1 // dot notation
+- myObject['key2'] // bracket notation
+
+*/
+
+console.log(myObject.key1); // Output: 'value1'
+console.log(myObject["key2"]); // Output: 42
+myObject.key4();
