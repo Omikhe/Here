@@ -23,6 +23,7 @@ const myObject = {
   key2: 42,
   key3: true,
   key4: function () {
+    this.key1 = "Omikhe!";
     console.log("I am a method!");
   },
 };
@@ -32,6 +33,9 @@ accessing data in objects
 
 You can access the properties of an object using dot notation or bracket notation
 
+dot notation: objectName.propertyName
+bracket nos
+
 - myObject.key1 // dot notation
 - myObject['key2'] // bracket notation
 
@@ -39,4 +43,16 @@ You can access the properties of an object using dot notation or bracket notatio
 
 console.log(myObject.key1); // Output: 'value1'
 console.log(myObject["key2"]); // Output: 42
-myObject.key4();
+
+myObject.key4(); //Output: I am a method!
+console.log(myObject["key1"]);
+myObject["key4"](); //Output: I am a method!
+
+function greet() {
+  user = "mike";
+  document.getElementById("demo").innerHTML = `Hello ${user}`;
+}
+
+function unGreet() {
+  document.getElementById("demo").innerHTML = "";
+}
