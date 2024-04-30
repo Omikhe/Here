@@ -24,6 +24,10 @@
   border: 2px solid #1f2937;
 }
 
+.kontena {
+  width: 300px;
+  height: 100px;
+}
 #demo {
   margin: 20px;
 }
