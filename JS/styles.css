@@ -1,0 +1,17 @@
+.userAccountsButton {
+  padding: 10px 20px 10px 20px;
+  border: 2px solid #1f2937;
+  font-size: 20px;
+  color: #1f2937;
+  margin-left: 20px;
+  background: none;
+}
+
+.userAccountsButton:hover {
+  padding: 10px 20px 10px 20px;
+  border: none;
+  font-size: 20px;
+  color: #f9faf8;
+  background-color: #1f2937;
+  border: 2px solid #1f2937;
+}
