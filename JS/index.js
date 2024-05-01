@@ -1,8 +1,12 @@
 const myList = document.getElementById("task-list");
+const taskInput = document.getElementById("task-input");
 
 const addTask = () => {
   const newTask = document.createElement("li");
-  newTask.textContent = "This is a new task";
+  newTask.textContent = taskInput.value.trim();
 
-  myList.appendChild(newTask);
+  if (newTask.textContent !== "") {
+    myList.appendChild(newTask);
+    taskInput.value = "";
+  }
 };
