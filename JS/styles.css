@@ -27,6 +27,8 @@
 .kontena {
   width: 300px;
   height: 100px;
+  border: 2px solid #1f2937;
+  margin: 20px;
 }
 #demo {
   margin: 20px;

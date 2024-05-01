@@ -48,11 +48,12 @@ myObject.key4(); //Output: I am a method!
 console.log(myObject["key1"]);
 myObject["key4"](); //Output: I am a method!
 
+//you can user these functions for a barebones to-do app :)
 function greet() {
   user = "mike";
   document.getElementById("demo").innerHTML = `Hello ${user}`;
 }
 
 function unGreet() {
-  document.getElementById("demo").innerHTML = "";
+  document.getElementById("demo").innerHTML = " ";
 }
