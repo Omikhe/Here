@@ -8,13 +8,12 @@
   </head>
   <body>
     <form action="" class="fomu">
-      <label for="text-field" class="title">Input Task Below</label><br />
-      <input type="text" name="text-field" class="text-field" />
-      <input type="submit" value="+" class="btn-add-task" />
+      <label for="task-input" class="title">Input Task Below</label><br />
+      <input type="text" name="task-input" id="task-input" />
+      <input type="submit" value="+" class="add-task-btn" onclick="addTask()" />
+      <ul id="task-list"></ul>
     </form>
-    <ul class="task-list">
-      <li>mike</li>
-    </ul>
+
     <script src="index.js"></script>
   </body>
 </html>

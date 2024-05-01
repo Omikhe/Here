@@ -1,4 +1,5 @@
 const myList = document.getElementById("task-list");
+const addTaskBtn = document.getElementById("btn-add-task");
 const taskInput = document.getElementById("task-input");
 
 const addTask = () => {
@@ -10,3 +11,5 @@ const addTask = () => {
     taskInput.value = "";
   }
 };
+
+addTaskBtn.addEventListener("click", addTask());
