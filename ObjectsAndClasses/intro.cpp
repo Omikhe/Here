@@ -1,6 +1,60 @@
 #include <iostream>
 
 using namespace std;
+class TV
+{
+public:
+    int channel;
+    int volumeLevel;
+    bool on;
+    TV()
+    {
+        channel = 1;     // default channel is 1
+        volumeLevel = 1; // default volument is set to 1
+        on = false;      // tv is set to off by default
+    }
+
+    void turnOn()
+    {
+        on = true;
+    }
+
+    void turnOff()
+    {
+        on = false;
+    }
+
+    void setChannel(int newChannel)
+    {
+        // check tv is on AND if the channel selected is not 0 and not greater than 120 (between 0 and 120)
+        if (on && newChannel >= 1 && newChannel <= 120)
+            channel = newChannel;
+    }
+
+    void channelUp()
+    {
+        if (on && channel < 120)
+            channel++;
+    }
+
+    void channelDown()
+    {
+        if (on && channel > 1)
+            channel--;
+    }
+
+    void volumeUp()
+    {
+        if (on && volumeLevel < 7)
+            volumeLevel++;
+    }
+
+    void volumeDown()
+    {
+        if (on && volumeLevel > 1)
+            volumeLevel--;
+    }
+};
 class Circle
 {
 public:
