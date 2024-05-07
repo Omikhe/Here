@@ -31,6 +31,12 @@ public:
             channel = newChannel;
     }
 
+    void setVolume(int newVolumeLevel)
+    {
+        if (on && newVolumeLevel >= 1 && newVolumeLevel <= 7)
+            volumeLevel = newVolumeLevel;
+    }
+
     void channelUp()
     {
         if (on && channel < 120)
@@ -82,26 +88,42 @@ public:
 
 int main()
 {
-    Circle seko(7.5);
-    Circle seko1(3.5);
-    Circle seko2(4.5);
+    TV tv1;
+    tv1.turnOn();
+    tv1.setChannel(20);
+    tv1.setVolume(5);
 
-    cout << "The area of a circle of radius "
-         << seko.radius << " is " << seko.getArea() << endl;
+    TV tv2;
+    tv2.turnOn();
+    tv2.setChannel(30);
+    tv2.setVolume(7);
 
-    cout << "The area of a circle of radius "
-         << seko1.radius << " is " << seko1.getArea() << endl;
+    cout << "tv1's channel is " << tv1.channel
+         << " and volume level is " << tv1.volumeLevel << endl;
 
-    cout << "The area of a circle of radius "
-         << seko2.radius << " is " << seko2.getArea() << endl;
+    cout << "tv2's channel is " << tv2.channel
+         << " and volume level is " << tv2.volumeLevel << endl;
 
-    cout << endl;
-    cout << "seko2 radius modified! via seko2.radius = 100;" << endl;
-    cout << endl;
+    // Circle seko(7.5);
+    // Circle seko1(3.5);
+    // Circle seko2(4.5);
 
-    seko2.radius = 100;
-    cout << "The area of a circle of radius "
-         << seko2.radius << " is " << seko2.getArea() << endl;
+    // cout << "The area of a circle of radius "
+    //      << seko.radius << " is " << seko.getArea() << endl;
+
+    // cout << "The area of a circle of radius "
+    //      << seko1.radius << " is " << seko1.getArea() << endl;
+
+    // cout << "The area of a circle of radius "
+    //      << seko2.radius << " is " << seko2.getArea() << endl;
+
+    // cout << endl;
+    // cout << "seko2 radius modified! via seko2.radius = 100;" << endl;
+    // cout << endl;
+
+    // seko2.radius = 100;
+    // cout << "The area of a circle of radius "
+    //      << seko2.radius << " is " << seko2.getArea() << endl;
 
     return 0;
 }
