@@ -1,3 +1,6 @@
+#ifndef CIRCLE_H
+#define CIRCLE_H
+
 class Circle
 {
 public:
@@ -14,3 +17,5 @@ public:
     double getArea();
 
 }; // must place semicolon here
+
+#endif
