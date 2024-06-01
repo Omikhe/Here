@@ -1,24 +1,15 @@
-// regular
-function add(a, b) {
-  return a + b;
-}
+const myList = document.getElementById("task-list");
+const addTaskBtn = document.getElementById("btn-add-task");
+const taskInput = document.getElementById("task-input");
 
-//arrow functions
-let sum = (a, b) => {
-  return a + b;
+const addTask = () => {
+  const newTask = document.createElement("li");
+  newTask.textContent = taskInput.value.trim();
+
+  if (newTask.textContent !== "") {
+    myList.appendChild(newTask);
+    taskInput.value = "";
+  }
 };
 
-//callback function
-function createQuote(quote, pukulu) {
-  var myQuote = "Like I always say, " + quote;
-  pukulu(myQuote); // 2
-}
-
-// function logQuote(quote) {
-//   console.log(quote);
-// }
-
-// annonymous functions
-createQuote("eat your vegetables!", (quote) => {
-  console.log(quote);
-});
+addTaskBtn.addEventListener("click", addTask());

@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>todo-app</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="kontena">
-      <h1 id="demo"></h1>
-    </div>
-    <button class="userAccountsButton" onclick="greet()">Greet</button>
-    <button class="userAccountsButton" onclick="unGreet()">Ungreet</button>
+    <form action="" class="fomu">
+      <label for="task-input" class="title">Input Task Below</label><br />
+      <input type="text" name="task-input" id="task-input" />
+      <input type="submit" value="+" class="add-task-btn" onclick="addTask()" />
+      <ul id="task-list"></ul>
+    </form>
 
     <script src="index.js"></script>
-    <script src="DocumentObjectModel.js"></script>
   </body>
 </html>
