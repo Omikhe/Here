@@ -21,8 +21,8 @@ function cost(w, b) {
 return result;
 }
 
-w = Math.random() * 10.0;
-b = Math.random() * 5.0;
+let w = Math.random() * 10.0;
+let b = Math.random() * 5.0;
 // w = 1.0;
 
 const eps = 1e-3;
@@ -39,11 +39,12 @@ for(let i = 0; i < 500; i++){
     w -= rate*dw;
     b -= rate*db; 
 
-    console.log(`cost = ${cost(w, b)} , w = ${w}, b = ${w}`);
+    console.log(`cost = ${cost(w, b)} , w = ${w}, b = ${b}`);
 
 }
 
 console.log("--------------------------------\n")
 console.log(`${w} , ${b}`);
+console.log(" ")
 
  
