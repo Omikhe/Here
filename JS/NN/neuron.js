@@ -16,9 +16,8 @@ function cost(w, b) {
     d = y - train[i][1];
     result += d * d;
     // console.log(`actual: ${y}, expected: ${train[i][1]}`);
-
-}
-return result;
+  }
+  return result;
 }
 
 let w = Math.random() * 10.0;
@@ -30,21 +29,20 @@ const rate = 1e-3;
 
 // console.log(cost(w));
 
-for(let i = 0; i < 500; i++){
-    const c = cost(w, b);
+for (let i = 0; i < 500; i++) {
+  const c = cost(w, b);
 
-    dw = (cost(w + eps, b) - c)/eps;
-    db = (cost(w, b + eps) - c)/eps;
+  dw = (cost(w + eps, b) - c) / eps;
+  db = (cost(w, b + eps) - c) / eps;
 
-    w -= rate*dw;
-    b -= rate*db; 
+  w -= rate * dw;
+  b -= rate * db;
 
-    console.log(`cost = ${cost(w, b)} , w = ${w}, b = ${b}`);
-
+  console.log(`cost = ${cost(w, b)} , w = ${w} , b = ${b}`); 
 }
 
-console.log("--------------------------------\n")
-console.log(`${w} , ${b}`);
-console.log(" ")
 
- 
+console.log(" "); 
+console.log("--------------------------------\n");
+console.log(`${w} , ${b}`);
+console.log(" ");
